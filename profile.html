@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="profileStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div id="header" class="header-container">
+            <div class="header-content">
+                <span class="header_name">Yoon</span> <br>
+                <i class="fa-regular fa-envelope"></i> 
+                yoon@jeemail.com <br>
+                <i class="fa-solid fa-phone"></i>
+                +13456764598
+            </div>
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+      
+    <!-- About Me Section -->
+    <section id="about">    
+        <img src="https://static.vecteezy.com/system/resources/previews/023/254/564/non_2x/hijab-woman-illustration-free-png.png" alt="Your Profile Picture" class="profile_image">
+        <div class="profile">
+            <h2 class="profile_name">Hi, I'm Yoon!  <img src="https://www.svgrepo.com/show/402888/waving-hand.svg" alt="hello.svg" class="hellohand"></h2>
+            <p>I am a full stack developer with 2 years of experience in both application and presentation layers. I have worked on applications and microservices deployed on IBM Cloud. I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="all_skills">
+            <div class="skill_list">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="HTML.svg" class="html_icon">
+                HTML <br>
+                2 years Experience
+            </div>
+            <div class="skill_list">
+                <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="javascript.svg" class="javascript_icon">
+                JavaScript <br>
+                1.5 years Experience
+            </div>
+            <div class="skill_list">
+                <img src="https://www.svgrepo.com/show/184143/java.svg" alt="java.svg" class="java_icon">
+                Java <br>
+                5 years Experience
+            </div>
+            <div class="skill_list">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="react.svg" class="react_icon">
+                React <br>
+                1 year Experience
+            </div>
+            <div class="skill_list">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="nodejs.svg" class="nodejs_icon">
+                Node.js <br>
+                1 year Experience
+            </div>
+            <div class="skill_list">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png" alt="Css.svg" class="css_icon">
+                CSS <br>
+                2 years Experience
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Chatbot</h3>
+            <p>• Developed a secure website integrated with a chatbot for an automobile client using HTML, CSS, JavaScript, and IBM Watson Assistant</p>
+        </div>
+        <div class="divider"></div>
+        <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <p>• Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</p>
+        </div>
+        <div class="divider"></div>
+        <div class="project-card">
+            <h3>Fashion Website</h3>
+            <p>• Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using Stripe for the payment gateway</p>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendation_messages">
+            <div class="recommendation">
+                <p>Jane is a very quick learner and quickly grasps key concepts of Web development. She has a great attitude & she is an excellent team player. She has a curious mind and asks the right questions. She takes initiative within a team and has the potential to lead.</p>
+            </div>
+            <div class="recommendation">
+                <p>Working with Jane has been an awesome experience. She is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need her expertise I would definitely want to work with her again.</p>
+            </div>
+            <div class="recommendation">
+                <p>I worked with Jane during the initial phase of our venture, which needed Web development. She is a committed resource who has in-depth knowledge about the domain. She will be an asset for any organization.</p>
+            </div>
+        </div>
+        <section class="recommendation_box">
+            <p>Leave a Recommendation</p>
+            <form class="recommendation_form" id="recommendationForm">
+                <input type="text" id="nameInput" placeholder="Name (optional)">
+                <textarea id="messageInput" rows="10" placeholder="Message"></textarea>
+                <button type="button" id="submitBtn">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- Error Message Modal -->
+    <div id="errorModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            
+            <p id="errorMessage">Please enter a recommendation message.</p>
+            <button id="okErrorButton">OK</button>
+        </div>
+    </div>
+    
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p>Thank you for your recommendation!</p>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+    <div id="go-home" class="iconbutton">
+        <a href="#header">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

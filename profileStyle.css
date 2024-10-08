@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: #4d19a0;
+}
+
+.header-content {
+    color: rgb(247, 244, 244);
+    line-height: 1.5;
+}
+
+.header_name {
+    margin: 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.header-container i {
+    margin-right: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 20px;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(247, 244, 244);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.profile_name {
+    font-size: 30px;
+    color: #4d19a0;
+}
+
+.hellohand {
+    width: 40px;
+    height: 40px;
+}
+
+.profile_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 25% 10%;
+    background-color: #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+h2 {
+    color: #4d19a0;
+}
+
+.all_skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skill_list {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    margin: 25px;
+}
+
+.skill_list i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill_list .html_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill_list .javascript_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.skill_list .java_icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill_list .react_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill_list .nodejs_icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill_list .css_icon {
+    width: 40px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.project-card {
+    margin-bottom: 20px;
+}
+
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.recommendation {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.recommendation_box {
+    margin-top: 20px;
+}
+
+.recommendation_form input,
+.recommendation_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.recommendation_form button {
+    padding: 10px 20px;
+    background-color: #4d19a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recommendation_form button:hover {
+    background-color: #3d0c80;
+}
+
+.iconbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.iconbutton a {
+    display: block;
+    background-color: #4d19a0;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.iconbutton i {
+    font-size: 24px;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark transparent background */
+}
+
+.modal-content {
+    background-color: #fefefe; /* White background for the modal content */
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888; /* Light border */
+    width: 80%; /* Responsive width */
+    max-width: 500px; /* Maximum width for the modal */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    text-align: center; /* Center text inside modal */
+}
+
+.modal p {
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #6a5acd;
+    margin-bottom: 20px; /* Space below the message */
+}
+
+/* Close button styles */
+.close-button {
+    color: #aaa; /* Light grey */
+    float: right; /* Position it at the right */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black; /* Change color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* OK button styles */
+#okButton, #okErrorButton {
+    background-color: #6a5acd; /* Purple color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px; /* Space around button */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#okButton, #okErrorButton:hover {
+    background-color: #5b4cbe; /* Darker purple on hover */
+}
+
